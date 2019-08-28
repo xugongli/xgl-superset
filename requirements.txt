@@ -4,6 +4,7 @@
 #
 #    pip-compile --output-file=requirements.txt setup.py
 #
+psycopg2
 superset== 0.29.0rc7
 alembic==1.0.11           # via flask-migrate
 amqp==2.5.0               # via kombu
