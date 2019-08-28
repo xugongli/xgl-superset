@@ -6,7 +6,9 @@ import os
 SUPERSET_WORKERS = 4  # for it to work in heroku basic/hobby dynos increase as you like
 SUPERSET_WEBSERVER_PORT = os.environ['PORT']
 # ---------------------------------------------------------
-MAPBOX_API_KEY = os.getenv('MAPBOX_API_KEY')
+MAPBOX_API_KEY = os.getenv('MAPBOX_API_KEY', 'pk.eyJ1Ijoic29hcmluZ3NvdWwiLCJhIjoiY2p5cnl3NjJrMDR1bjNicDVvbDVxdmx4MyJ9.fS6tYExLA7fXhbtuhrVMBQ')
+BABEL_DEFAULT_LOCALE = "zh"
+
 
 # ---------------------------------------------------------
 # Flask App Builder configuration

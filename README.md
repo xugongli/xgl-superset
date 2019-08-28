@@ -6,7 +6,7 @@ Superset is a data exploration platform designed to be visual, intuitive, and in
 
 To get your own Superset App running on Heroku, click the button below:
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/zintj/superset-on-heroku)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/xugongli/xgl-superset)
 
 ### Things you should know
 ##### After deployment
@@ -22,8 +22,10 @@ heroku git:clone --app YOURAPPNAME
 
 ```sh
 heroku run bash --app YOURAPPNAME
-fabmanager create-admin --app superset
+export FLASK_APP=superset
+flask fab create-admin --app superset
 superset db upgrade
+superset load examples
 superset init
 ```
 
